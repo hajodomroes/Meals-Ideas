@@ -1,0 +1,17 @@
+{
+  "Meals": [
+    {
+      "name": "Spaghetti Bolognese",
+      "complexLevel": "low",
+      "ingredients": [
+        "Spaghetti 500g",
+        "Fertigtüte Bolognese",
+        "Paprika",
+        "Hackfleisch 500g",
+        "gehackte Tomaten",
+        "Parmesan"
+      ],
+      "category ": "nudeln"
+    }
+  ]
+}
