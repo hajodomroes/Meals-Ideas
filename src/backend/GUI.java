@@ -1,3 +1,7 @@
+package backend;
+
+import backend.DBConnection;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -12,7 +16,7 @@ class GUI{
 
     public GUI() {
         // FRAME
-        JFrame frame = new JFrame("Meals GUI");
+        JFrame frame = new JFrame("Meals backend.GUI");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(900, 900);
 

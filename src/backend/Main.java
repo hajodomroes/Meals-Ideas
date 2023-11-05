@@ -1,3 +1,7 @@
+package backend;
+
+import backend.GUI;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -9,7 +13,7 @@ public class Main {
 
         new GUI();
         /*
-        DBConnection connection = new DBConnection();
+        backend.DBConnection connection = new backend.DBConnection();
         connection.addMeal("Spaghetti", "low", "dinge", "nudeln");
         connection.getData("select * from mealsList");
         /*
