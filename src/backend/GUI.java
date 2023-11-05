@@ -16,12 +16,12 @@ class GUI{
 
     public GUI() {
         // FRAME
-        JFrame frame = new JFrame("Meals backend.GUI");
+        JFrame frame = new JFrame("backend.Meals backend.GUI");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(900, 900);
 
         // BUTTON
-        JButton button = new JButton("Show Meals");
+        JButton button = new JButton("Show backend.Meals");
         button.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onPressButtonAddTest();
