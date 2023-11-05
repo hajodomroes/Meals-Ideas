@@ -8,6 +8,8 @@ import java.util.Arrays;
 
 class GUI{
 
+    private DBConnection conn = new DBConnection();
+
     public GUI() {
         // FRAME
         JFrame frame = new JFrame("Meals GUI");
@@ -16,23 +18,15 @@ class GUI{
 
         // BUTTON
         JButton button = new JButton("Show Meals");
+        button.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onPressButtonAddTest();
+            }
+        } );
 
         // TABLE
         String[] colums = {"name", "complexLevel", "ingrediants", "category"};
         String[][] data = {};
-
-        button.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent evt) {
-                ArrayList<java.lang.String> arrayList = new DBConnection().getDataAsArrayList("select * from mealsList");
-                for (String e : arrayList) {
-                    e -> {
-                        data.stream.toList.add(e);}
-                }
-            }
-        });
-
         JTable table = new JTable(data, colums);
         table.setBounds(50, 50, 700, 200);
 
@@ -44,5 +38,10 @@ class GUI{
 
 
         frame.setVisible(true);
+    }
+
+    public void onPressButtonAddTest() {
+        String exampleQuery = "INSERT INTO `mealsdatabase`.`mealslist` (`name`, `complexlevel`, `ingrediants`, `category`) VALUES ('Button', 'Button', 'Button', 'Button');";
+        conn.addMeal("Button", "Button", "Button", "Button");
     }
 }

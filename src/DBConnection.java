@@ -34,6 +34,7 @@ public class DBConnection {
             System.out.println("Error in getData: " + e);
         }
     }
+    /*
     public ArrayList<String> getDataAsArrayList(String query) {
         String[][] ArrayofArrays = {};
         try {
@@ -60,7 +61,8 @@ public class DBConnection {
             System.out.println("Error in getData: " + e);
         }
         return ArrayofArrays;
-    }
+    }*/
+
     public void updateData(String query) {
         try {
             statement = connection.createStatement();
